@@ -1,11 +1,10 @@
 "use client";
 import { CiSearch } from "react-icons/ci";
-import { useState } from "react";
 
 export default function Navbar() {
 	return (
 		<>
-			<div className="flex fixed  right-0 justify-between  items-center px-10 gap-5 w-[79vw] h-20 bg-[#0D0D0D] rounded-2xl rounded-tr-none rounded-br-none rounded-tl-none">
+			<div className="flex fixed justify-between right-0 items-center px-10 gap-5 w-[79vw] h-20 bg-[#0D0D0D] rounded-2xl rounded-tr-none rounded-br-none rounded-tl-none">
 				<div className="flex items-center gap-3 bg-[#3D3D3D] rounded-3xl w-96 pl-4 pr-4">
 					<input
 						type="text"
