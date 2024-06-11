@@ -1,3 +1,4 @@
+import Card from "./card.jsx"
 export default function Artists(){
     const artists = [
         {src:'https://via.placeholder.com/800x400/ff5733/fff',
@@ -8,7 +9,7 @@ export default function Artists(){
         name:3},
         
       ];
-      const renderCard = (albums) => (
+      const renderCard = (artists) => (
         <Card
           src={artists.src}
           title={artists.name}
@@ -16,13 +17,13 @@ export default function Artists(){
         />
       );
       
-      const Artists = () => {
-        const cardElements = artists.map(renderCard);
-        return (
-          <div id="projects-section">
-            <h1 className="title">Artists</h1>
-            {cardElements}
-          </div>
-        );
-      };
-}
+      
+    const cardElements = artists.map(renderCard);
+    return (
+        <div className="datas" id="projects-section">
+        <h1 className="title">Artists</h1>
+        {cardElements}
+        </div>
+    );
+      
+    }

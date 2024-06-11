@@ -26,6 +26,33 @@ body {
 		rgb(var(--background-start-rgb));
 }
 
+/* main media */
+.media_wrapper{
+	width: 76%;
+	margin: 1rem;
+	margin-left: 0.5rem !important;
+	padding: 1rem;
+	border-radius:1.5rem ;
+	background-color: #1c1c1c;
+}
+
+.card{
+	display: flex;
+	flex-direction: column;
+	width: 14rem;
+	height: 15rem;
+	padding: 1rem;
+	margin: 1rem;
+}
+.card-image{
+	border-radius: 100%;
+	height: 15rem;
+}
+.datas{
+	display: flex;
+}
+/* end main media */
+
 @layer utilities {
 	.text-balance {
 		text-wrap: balance;

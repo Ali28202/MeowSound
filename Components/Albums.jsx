@@ -1,4 +1,4 @@
-
+import Card from "./card.jsx"
 export default function Albums(){
     const albums = [
         {src:'https://via.placeholder.com/800x400/ff5733/fff',
@@ -7,7 +7,7 @@ export default function Albums(){
         artist:2},
         {src:'https://via.placeholder.com/800x400/5733ff/fff',
         artist:3},
-        
+
       ];
       const renderCard = (albums) => (
         <Card
@@ -17,13 +17,11 @@ export default function Albums(){
         />
       );
       
-      const Albums = () => {
-        const cardElements = albums.map(renderCard);
-        return (
-          <div id="projects-section">
-            <h1 className="title">Albums</h1>
-            {cardElements}
-          </div>
-        );
-      };
+    const cardElements = albums.map(renderCard);
+    return (
+        <div className="datas" id="projects-section">
+        <h1 className="title">Albums</h1>
+        {cardElements}
+        </div>
+    );
 }
