@@ -1,3 +1,4 @@
+import Card from "./card.jsx"
 export default function Podcasts(){
     const podcasts = [
         {src:'https://via.placeholder.com/800x400/ff5733/fff',
@@ -16,13 +17,11 @@ export default function Podcasts(){
         />
       );
       
-      const Podcasts = () => {
-        const cardElements = podcasts.map(renderCard);
-        return (
-          <div id="projects-section">
-            <h1 className="title">Podcasts</h1>
-            {cardElements}
-          </div>
-        );
-      };
+    const cardElements = podcasts.map(renderCard);
+    return (
+        <div className="datas" id="projects-section">
+        <h1 className="title">Podcasts</h1>
+        {cardElements}
+        </div>
+    );
 }
