@@ -1,10 +1,10 @@
 import Card from "./Card.jsx";
 export default function Albums() {
 	const albums = [
-		{ src: "https://via.placeholder.com/800x400/ff5733/fff", artist: 1 },
-		{ src: "https://via.placeholder.com/800x400/33ff57/fff", artist: 2 },
-		{ src: "https://via.placeholder.com/800x400/5733ff/fff", artist: 3 },
-		{ src: "https://via.placeholder.com/800x400/5733ff/fff", artist: 4 },
+		{ src: "albums/khooneyeArezoo.jpg", artist: "Khooneye Arezoo" , type: "albumCard"},
+		{ src: "albums/doomEternal.png", artist: "Doom Eternal" , type: "albumCard"},
+		{ src: "albums/blurryFace.jpg", artist: "Blurry Face" , type: "albumCard"},
+		{ src: "albums/toxicity.jpg", artist: "Toxicity" , type: "albumCard"},
 	];
 	const renderCard = (albums) => (
 		<Card src={albums.src} title={albums.artist} key={albums.artist} />
