@@ -1,5 +1,3 @@
-import Menu from "@/Components/Menu";
-import Library from "@/Components/Library";
 import Category from "@/Components/Category";
 import Artists from "@/Components/Artists";
 import Albums from "@/Components/Albums";

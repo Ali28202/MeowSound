@@ -27,7 +27,7 @@ export default function Albums() {
 	return (
 		<div className="" id="projects-section">
 			<h1 className="title text-2xl mt-3 ml-5">Popular Albums</h1>
-			<div className="xl:flex grid grid-cols-2 grid-rows-2 gap-3 xl:gap-0">
+			<div className="xl:flex mt-6 grid grid-cols-2 grid-rows-2 gap-2 xl:gap-0">
 				{cardElements}
 			</div>
 		</div>
