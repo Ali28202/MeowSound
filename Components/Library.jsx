@@ -4,7 +4,7 @@ import { FiPlus } from "react-icons/fi";
 export default function Library() {
 	return (
 		<>
-			<div className="flex flex-col gap-5 bg-[#0D0D0D] w-72 pt-2 mt-6 rounded-2xl rounded-tl-none rounded-bl-none h-[152vh]">
+			<div className="flex flex-col gap-5 bg-[#0D0D0D] w-72 pt-2 mt-6 mb-6 rounded-2xl rounded-tl-none rounded-bl-none h-[152vh]">
 				<div className="flex gap-7 mt-6 ml-10 ">
 					<a
 						href="/"

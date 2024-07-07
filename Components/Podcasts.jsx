@@ -2,24 +2,28 @@ import Card from "./Card.jsx";
 export default function Podcasts() {
 	const podcasts = [
 		{
-			src: "podcasts/dead-eyes-podcast.webp",
+			src: "/podcasts/dead-eyes-podcast.webp",
 			artist: "Dead Eyes",
-			type: "podcastCard",
+			type: "podcasts",
+			id: 1,
 		},
 		{
-			src: "podcasts/code-switch-podcast.webp",
+			src: "/podcasts/code-switch-podcast.webp",
 			artist: "Code Switch",
-			type: "podcastCard",
+			type: "podcasts",
+			id: 2,
 		},
 		{
-			src: "podcasts/home-cooking-podcast.webp",
+			src: "/podcasts/home-cooking-podcast.webp",
 			artist: "Home Cooking",
-			type: "podcastCard",
+			type: "podcasts",
+			id: 3,
 		},
 		{
-			src: "podcasts/outsiders.webp",
+			src: "/podcasts/outsiders.webp",
 			artist: "Outsiders",
-			type: "podcastCard",
+			type: "podcasts",
+			id: 4,
 		},
 	];
 	const renderCard = (podcasts) => (
@@ -28,6 +32,7 @@ export default function Podcasts() {
 			title={podcasts.artist}
 			key={podcasts.artist}
 			type={podcasts.type}
+			id={podcasts.id}
 		/>
 	);
 

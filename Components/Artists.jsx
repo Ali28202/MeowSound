@@ -1,10 +1,25 @@
 import Card from "./Card.jsx";
 export default function Artists() {
 	const artists = [
-		{ src: "artists/moein.jpg", name: "Moein", type: "artistCard" },
-		{ src: "artists/mickGordon.jpg", name: "MickGordon", type: "artistCard" },
-		{ src: "artists/21pilots.jpeg", name: "21Pilots", type: "artistCard" },
-		{ src: "artists/anathema.jpeg", name: "Anathema", type: "artistCard" },
+		{ src: "/artists/moein.jpg", name: "Moein", type: "artists", id: 1 },
+		{
+			src: "/artists/mickGordon.jpg",
+			name: "MickGordon",
+			type: "artists",
+			id: 2,
+		},
+		{
+			src: "/artists/21pilots.jpeg",
+			name: "Twenty One Pilots",
+			type: "artists",
+			id: 3,
+		},
+		{
+			src: "/artists/anathema.jpeg",
+			name: "Anathema",
+			type: "artists",
+			id: 4,
+		},
 	];
 	const renderCard = (artists) => (
 		<Card
@@ -12,6 +27,7 @@ export default function Artists() {
 			title={artists.name}
 			key={artists.name}
 			type={artists.type}
+			id={artists.id}
 		/>
 	);
 
