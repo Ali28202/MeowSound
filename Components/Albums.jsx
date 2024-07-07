@@ -2,17 +2,24 @@ import Card from "./Card.jsx";
 export default function Albums() {
 	const albums = [
 		{
-			src: "albums/khooneyeArezoo.jpg",
+			src: "/albums/khooneyeArezoo.jpg",
 			artist: "Khooneye Arezoo",
-			type: "albumCard",
+			type: "albums",
+			id: 1,
 		},
 		{
-			src: "albums/doomEternal.png",
+			src: "/albums/doomEternal.png",
 			artist: "Doom Eternal",
-			type: "albumCard",
+			type: "albums",
+			id: 2,
 		},
-		{ src: "albums/blurryFace.jpg", artist: "Blurry Face", type: "albumCard" },
-		{ src: "albums/toxicity.jpg", artist: "Toxicity", type: "albumCard" },
+		{
+			src: "/albums/blurryFace.jpg",
+			artist: "Blurry Face",
+			type: "albums",
+			id: 3,
+		},
+		{ src: "/albums/toxicity.jpg", artist: "Toxicity", type: "albums", id: 4 },
 	];
 	const renderCard = (albums) => (
 		<Card
@@ -20,6 +27,7 @@ export default function Albums() {
 			title={albums.artist}
 			key={albums.artist}
 			type={albums.type}
+			id={albums.id}
 		/>
 	);
 
