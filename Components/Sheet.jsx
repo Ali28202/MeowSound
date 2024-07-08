@@ -22,7 +22,7 @@ export default function MobileSheet() {
 							{/* Logo */}
 							<div className="bg-[#111111] flex pr-4 gap-1 items-center justify-end mb-6 w-full h-[10vh] rounded-2xl rounded-tr-none rounded-tl-none">
 								<Link href={"/"}>
-									<img src="logo.png" alt="logo" className="w-10 mb-1" />
+									<img src="/logo.png" alt="logo" className="w-10 mb-1" />
 								</Link>
 								<Link href={"/"}>
 									<h1 className="text-base">MeowSound</h1>
