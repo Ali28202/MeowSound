@@ -19,7 +19,12 @@ export default function Albums() {
 			type: "albums",
 			id: 3,
 		},
-		{ src: "/albums/toxicity.jpg", artist: "Toxicity", type: "albums", id: 4 },
+		{
+			src: "/albums/Anathema-Judgement.jpg",
+			artist: "Judgement",
+			type: "albums",
+			id: 4,
+		},
 	];
 	const renderCard = (albums) => (
 		<Card
