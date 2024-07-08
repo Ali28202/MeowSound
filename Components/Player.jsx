@@ -16,7 +16,7 @@ export default function Player({ track }) {
 				<div className="flex xl:flex-col flex-row xl:items-stretch xl:justify-center justify-between xl:pr-0 pr-9 items-center">
 					<AudioInfo {...{ track }} />
 					<AudioPlayer {...{ track, audioRef, setDuration, progressBarRef }} />
-					<div className="xl:mt-3">
+					<div className="xl:mt-1">
 						<AudioControls
 							{...{
 								track,
